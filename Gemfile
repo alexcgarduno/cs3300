@@ -72,4 +72,10 @@ gem 'mini_racer'
   
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+
+group :test do
+  # Might be other lines here, so simply add after them
+  gem 'factory_bot_rails'
+end
+
 end

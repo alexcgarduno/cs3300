@@ -1,3 +1,4 @@
+=begin
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
@@ -22,6 +23,7 @@ RSpec.feature "Projects", type: :feature do
   end
 
   context "Update project" do
+    
     let(:project) { Project.create(title: "Test title", description: "Test content") }
     before(:each) do
       visit edit_project_path(project)
@@ -45,6 +47,7 @@ RSpec.feature "Projects", type: :feature do
   end
 
   context "Remove existing project" do
+
     let!(:project) { Project.create(title: "Test title", description: "Test content") }
     scenario "remove project" do
       visit projects_path
@@ -54,3 +57,4 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 end
+=end
