@@ -1,14 +1,13 @@
+<br>
+<br>
 <p id="notice"><%= notice %></p>
+<div class="container px-5 bg-light">
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<p class="h1 text-center"><%= @project.title %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+
+<p class="h5 text-center"><%= @project.description %></p>
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
