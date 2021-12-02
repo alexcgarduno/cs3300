@@ -18,19 +18,19 @@
     <a class="navbar-brand" href="/">Alex Garduno</a>
     <div class="navbar-nav ml-auto">
     <% if user_signed_in? %>
-    <%= button_to "New Project", new_project_path, method: :get, :class => "btn btn-outline-primary" , :form_class => "form-inline"%>
+    <%= button_to "New Project", new_project_path, method: :get, :class => "btn btn-primary" , :form_class => "form-inline"%>
     <div style="padding-left: 10px;">
-    <%= button_to "Edit Profile", edit_user_registration_path, method: :get, :class => "btn btn-outline-warning",  :form_class => "form-inline"%>
+    <%= button_to "Edit Profile", edit_user_registration_path, method: :get, :class => "btn btn-warning",  :form_class => "form-inline"%>
     </div>
    
     <div style="padding-left: 10px;" >
-    <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "btn btn-outline-danger",  :form_class => "form-inline"%>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "btn btndanger",  :form_class => "form-inline"%>
     </div>
     <% else %>
-    <%= button_to "Login", new_user_session_path, method: :get, :class => "btn btn-outline-success", :form_class => "form-inline" %>
+    <%= button_to "Login", new_user_session_path, method: :get, :class => "btn btn-success", :form_class => "form-inline" %>
 
     <div style="padding-left: 10px;">
-    <%= button_to "Sign Up", new_user_registration_path, method: :get, :class => "btn btn-outline-success", :form_class => "form-inline" %>
+    <%= button_to "Sign Up", new_user_registration_path, method: :get, :class => "btn btn-success", :form_class => "form-inline" %>
     </div>
       <% end %>
     </div>
