@@ -8,6 +8,7 @@
 
 <p class="h5 text-center"><%= @project.description %></p>
 
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
+<% if user_signed_in? %>
+<%= link_to 'Edit', edit_project_path(@project) %> 
 <%= link_to 'Back', projects_path %>
+<% end %>
